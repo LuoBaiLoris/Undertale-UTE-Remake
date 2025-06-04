@@ -510,6 +510,7 @@
     {"name":"spr_hint_border","order":5,"path":"sprites/spr_hint_border/spr_hint_border.yy",},
     {"name":"spr_hint_half_size","order":7,"path":"sprites/spr_hint_half_size/spr_hint_half_size.yy",},
     {"name":"spr_hint_landmark","order":3,"path":"sprites/spr_hint_landmark/spr_hint_landmark.yy",},
+    {"name":"spr_introimage_1","order":3,"path":"sprites/spr_introimage_1/spr_introimage_1.yy",},
     {"name":"spr_introimage","order":1,"path":"sprites/spr_introimage/spr_introimage.yy",},
     {"name":"spr_introlast","order":2,"path":"sprites/spr_introlast/spr_introlast.yy",},
     {"name":"spr_logo","order":7,"path":"sprites/spr_logo/spr_logo.yy",},

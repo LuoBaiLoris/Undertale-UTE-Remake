@@ -1,13 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 live_auto_call
-draw_self();
+
 if last
 {
-	
+	draw_sprite_ext(spr_introlast,0,0,-220+_y,1,1,0,c_white,image_alpha);
+	draw_sprite(spr_introimage_1,0,0,0);
 }
-draw_text(0,0,time)
-if keyboard_check_pressed(vk_space)
+else
 {
-	show_debug_message(time)
+	draw_self();
 }

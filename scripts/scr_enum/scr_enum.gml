@@ -5,4 +5,4 @@ enum LANG
 	SCH,
 	JPN
 }
-global.lang = LANG.ENG;
+global.lang = LANG.SCH;
