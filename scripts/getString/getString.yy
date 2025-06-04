@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"getString",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"getString",
+  "parent":{
+    "name":"文本",
+    "path":"folders/文本.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

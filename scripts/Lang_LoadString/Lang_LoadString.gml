@@ -9,7 +9,7 @@ function Lang_LoadString() {
 	if(is_real(LANG)){
 		LANG=Lang_GetName(LANG);
 	}
-
+	
 	if(!file_exists(GMU_LANG_PATH_BASE+LANG+"/"+GMU_LANG_PATH_STRING)){
 		return false;
 	}
