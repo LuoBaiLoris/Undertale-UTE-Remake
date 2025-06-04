@@ -14,9 +14,9 @@ Input_Bind(INPUT.RIGHT,INPUT_TYPE.KEYBOARD,0,vk_right);
 
 Lang_Init();
 Lang_LoadList();
-Lang_LoadString(global.lang);
-Lang_LoadSprite(global.lang);
-Lang_LoadFont(global.lang);
+Lang_LoadString(1);
+Lang_LoadSprite(1);
+Lang_LoadFont(1);
 
 Item_Init();
 
