@@ -1,7 +1,7 @@
-function getString(_string)
+function getString(_string,_out = true)
 {
 	var _return = "";
-	if instance_exists(strings)
+	if !_out
 	{	
 		switch(global.lang)
 		{
@@ -20,5 +20,6 @@ function getString(_string)
 	{
 		_return = Lang_GetString(_string);
 	}
+	show_debug_message(_return)
 	return _return;
 }

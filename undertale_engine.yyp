@@ -175,6 +175,7 @@
     {"$GMIncludedFile":"","%Name":"string.txt","CopyToMask":-1,"filePath":"datafiles/locale/schinese","name":"string.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"battle.json","CopyToMask":-1,"filePath":"datafiles/locale/schinese/string","name":"battle.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"font.json","CopyToMask":-1,"filePath":"datafiles/locale/schinese/string","name":"font.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"intro.json","CopyToMask":-1,"filePath":"datafiles/locale/schinese/string","name":"intro.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"item.json","CopyToMask":-1,"filePath":"datafiles/locale/schinese/string","name":"item.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"menu.json","CopyToMask":-1,"filePath":"datafiles/locale/schinese/string","name":"menu.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ui.json","CopyToMask":-1,"filePath":"datafiles/locale/schinese/string","name":"ui.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
