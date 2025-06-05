@@ -57,14 +57,14 @@ function Battle_EndMenu() {
 					}else{
 						fled_text=0;
 					}
-					text+=Lang_GetString("battle.result.fled."+string(fled_text));
+					text+=getString("battle.result.fled."+string(fled_text));
 				}else{
 					text+="{define `EXP` "+string(EXP)+"}"+"{define `GOLD` "+string(GOLD)+"}";
-					text+=Lang_GetString("battle.result.fled.reward");
+					text+=getString("battle.result.fled.reward");
 					Player_SetExp(Player_GetExp()+Battle_GetRewardExp());
 					Player_SetGold(Player_GetGold()+Battle_GetRewardGold());
 					if(Player_UpdateLv()){
-						//text+="&"+Lang_GetString("battle.result.lv_up");
+						//text+="&"+getString("battle.result.lv_up");
 						audio_play_sound(snd_level_up,0,false);
 					}
 				}

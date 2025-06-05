@@ -1,3 +1,6 @@
 font/unifont.ini
 font/fzxs12.ini
 font/simsun.ini
+font/dotumche.ini
+font/determination_mono.ini
+font/determination_sans.ini

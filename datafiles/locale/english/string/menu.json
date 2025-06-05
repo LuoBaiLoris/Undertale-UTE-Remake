@@ -1,4 +1,5 @@
 {
+    "menu.instruction":"{color_text `gray_light`} --- Instruction ---{space_y -1}&&{space_y 2}[Z or ENTER] - Confirm&[X or SHIFT] - Cancel&[C or CTRL] - Menu (In-game)&[F4] - Fullscreen&[Hold ESC] - Quit&When HP is 0, you lose.",
     "menu.begin": "Begin Game",
     "menu.settings": "Settings",
     "menu.continue": "Continue",

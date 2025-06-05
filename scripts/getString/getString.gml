@@ -1,19 +1,24 @@
 function getString(_string)
 {
+	var _return = "";
 	if instance_exists(strings)
 	{	
 		switch(global.lang)
 		{
 			case LANG.ENG:
-				return variable_instance_get(strings.eng,_string);
+				_return = variable_instance_get(strings.eng,_string);
 			break
 			case LANG.SCH:
-				return variable_instance_get(strings.sch,_string);
+				_return = variable_instance_get(strings.sch,_string);
 			break
 			case LANG.JPN:
-				return variable_instance_get(strings.jpn,_string);
+				_return = variable_instance_get(strings.jpn,_string);
 			break
 		}
-		
 	}
+	else
+	{
+		_return = Lang_GetString(_string);
+	}
+	return _return;
 }

@@ -5,7 +5,7 @@ if(_state==0){
 	s.LoadFromFile();
 	
 	_inst_name=instance_create_depth(108+6+26,118+6+16,0,text_typer);
-	_inst_name.text=_prefix+z.Get(FLAG_INFO_NAME,Lang_GetString("ui.save.name.empty"));
+	_inst_name.text=_prefix+z.Get(FLAG_INFO_NAME,getString("ui.save.name.empty"));
 	
 	_inst_lv=instance_create_depth(108+6+180,118+6+16,0,text_typer);
 	_inst_lv.text=_prefix+$"LV {z.Get(FLAG_INFO_LV,0)}";
@@ -24,10 +24,10 @@ if(_state==0){
 	_inst_room.text=_prefix+Player_GetRoomName(roomIndex);
 	
 	_inst_save=instance_create_depth(108+6+56,118+6+116,0,text_typer);
-	_inst_save.text=_prefix+Lang_GetString("ui.save.save");
+	_inst_save.text=_prefix+getString("ui.save.save");
 	
 	_inst_return=instance_create_depth(108+6+236,118+6+116,0,text_typer);
-	_inst_return.text=_prefix+Lang_GetString("ui.save.return");
+	_inst_return.text=_prefix+getString("ui.save.return");
 }
 if(_state==1){
 	Storage_SaveGame();
@@ -54,7 +54,7 @@ if(_state==1){
 	}
 	
 	_inst_name=instance_create_depth(108+6+26,118+6+16,0,text_typer);
-	_inst_name.text=_prefix+"{color `yellow`}"+z.Get(FLAG_INFO_NAME,Lang_GetString("ui.save.name.empty"));
+	_inst_name.text=_prefix+"{color `yellow`}"+z.Get(FLAG_INFO_NAME,getString("ui.save.name.empty"));
 	
 	_inst_lv=instance_create_depth(108+6+180,118+6+16,0,text_typer);
 	_inst_lv.text=_prefix+"{color `yellow`}"+$"LV {z.Get(FLAG_INFO_LV,0)}";
@@ -73,5 +73,5 @@ if(_state==1){
 	_inst_room.text=_prefix+"{color `yellow`}"+Player_GetRoomName(roomIndex);
 	
 	_inst_save=instance_create_depth(108+6+56,118+6+116,0,text_typer);
-	_inst_save.text=_prefix+"{color `yellow`}"+Lang_GetString("ui.save.saved");
+	_inst_save.text=_prefix+"{color `yellow`}"+getString("ui.save.saved");
 }

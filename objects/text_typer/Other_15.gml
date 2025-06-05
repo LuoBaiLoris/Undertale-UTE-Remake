@@ -21,10 +21,12 @@ enum FONT
 {
 	DIALOG,
 	MENU,
+	MENU_2,
 	BATTLE
 }
 //datafile里面txt定义其他数值（scale，space）
 //[enum_font, enum_lang]
+
 _group_font[FONT.DIALOG,0]=Lang_GetFont(Lang_GetString("font.dialog.0"));
 _group_font_scale_x[FONT.DIALOG,0]=real(Lang_GetString("font.dialog.0.scale.x"));
 _group_font_scale_y[FONT.DIALOG,0]=real(Lang_GetString("font.dialog.0.scale.y"));

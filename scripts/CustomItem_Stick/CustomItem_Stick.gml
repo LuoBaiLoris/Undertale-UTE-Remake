@@ -3,7 +3,7 @@
 // and OnInfo to show the localized dialog "item.key.info"
 function CustomItem_Stick() : ItemTypeSimple("stick") constructor{
 	function OnUse(inventory,index){
-		Dialog_Add(Lang_GetString("item.stick.use"));
+		Dialog_Add(getString("item.stick.use"));
 		Dialog_Start();
 	}
 }

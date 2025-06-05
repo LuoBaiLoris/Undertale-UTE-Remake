@@ -1,3 +1,5 @@
+live_auto_call
+global.lang = LANG.SCH;
 Anim_Init();
 
 Input_Init();
@@ -14,9 +16,9 @@ Input_Bind(INPUT.RIGHT,INPUT_TYPE.KEYBOARD,0,vk_right);
 
 Lang_Init();
 Lang_LoadList();
-Lang_LoadString(1);
-Lang_LoadSprite(1);
-Lang_LoadFont(1);
+Lang_LoadString(real(global.lang));
+Lang_LoadSprite(real(global.lang));
+Lang_LoadFont(real(global.lang));
 
 Item_Init();
 

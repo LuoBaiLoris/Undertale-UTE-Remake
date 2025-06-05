@@ -12,15 +12,15 @@ if(_menu==1){
 	}
 	if(!instance_exists(_inst_item_use)){
 		_inst_item_use=instance_create_depth(188+6+38,52+6+302,0,text_typer);
-		_inst_item_use.text=_prefix+Lang_GetString("ui.menu.item.use");
+		_inst_item_use.text=_prefix+getString("ui.menu.item.use");
 	}
 	if(!instance_exists(_inst_item_info)){
 		_inst_item_info=instance_create_depth(188+6+134,52+6+302,0,text_typer);
-		_inst_item_info.text=_prefix+Lang_GetString("ui.menu.item.info");
+		_inst_item_info.text=_prefix+getString("ui.menu.item.info");
 	}
 	if(!instance_exists(_inst_item_drop)){
 		_inst_item_drop=instance_create_depth(188+6+248,52+6+302,0,text_typer);
-		_inst_item_drop.text=_prefix+Lang_GetString("ui.menu.item.drop");
+		_inst_item_drop.text=_prefix+getString("ui.menu.item.drop");
 	}
 }else{
 	if(_menu!=2){
@@ -54,7 +54,7 @@ if(_menu==3){
 		var weapon=itemTypeManager.GetNameOrFallback(Player_GetItemWeapon());
 		var armor=itemTypeManager.GetNameOrFallback(Player_GetItemArmor());
 		var gold=Player_GetGold();
-		_inst_stat_0.text=_prefix+"{define `NAME` `"+name+"`}{define `LV` "+string(lv)+"}{define `HP` "+string(hp)+"}{define `HP_MAX` "+string(hp_max)+"}{define `ATK` "+string(atk)+"}{define `ATK_ITEM` "+string(atk_item)+"}{define `DEF` "+string(def)+"}{define `DEF_ITEM` "+string(def_item)+"}{define `WEAPON` `"+weapon+"`}{define `ARMOR` `"+armor+"`}{define `GOLD` "+string(gold)+"}"+Lang_GetString("ui.menu.stat.0");
+		_inst_stat_0.text=_prefix+"{define `NAME` `"+name+"`}{define `LV` "+string(lv)+"}{define `HP` "+string(hp)+"}{define `HP_MAX` "+string(hp_max)+"}{define `ATK` "+string(atk)+"}{define `ATK_ITEM` "+string(atk_item)+"}{define `DEF` "+string(def)+"}{define `DEF_ITEM` "+string(def_item)+"}{define `WEAPON` `"+weapon+"`}{define `ARMOR` `"+armor+"`}{define `GOLD` "+string(gold)+"}"+getString("ui.menu.stat.0");
 	}
 	if(!instance_exists(_inst_stat_1)){
 		_inst_stat_1=instance_create_depth(188+6+190,52+6+182,0,text_typer);
@@ -62,7 +62,7 @@ if(_menu==3){
 		var lv=Player_GetLv();
 		var lv_xp=Player_GetLvExp(lv+1);
 		var kills=Player_GetKills();
-		_inst_stat_1.text=_prefix+"{define `EXP` "+string(xp)+"}{define `EXP_NEXT` "+(lv_xp!=-1 ? string(lv_xp-xp) : "`N/A`")+"}"+Lang_GetString("ui.menu.stat.1")+(kills>0 ? "{define `KILLS` "+string(kills)+"}"+Lang_GetString("ui.menu.stat.2") : "");
+		_inst_stat_1.text=_prefix+"{define `EXP` "+string(xp)+"}{define `EXP_NEXT` "+(lv_xp!=-1 ? string(lv_xp-xp) : "`N/A`")+"}"+getString("ui.menu.stat.1")+(kills>0 ? "{define `KILLS` "+string(kills)+"}"+getString("ui.menu.stat.2") : "");
 	}
 }else{
 	if(instance_exists(_inst_stat_0)){

@@ -1,14 +1,15 @@
 ///@desc Menu Switch
+live_auto_call
 if(_menu==0){
 	var s=Storage_GetInfo();
 	_mode=s.IsFileExists()?1:0;
 	if(_mode==0){
 		_inst_instruction=instance_create_depth(170,40,0,text_typer);
-		_inst_instruction.text=_prefix+"{color_text `gray_light`} --- Instruction ---{space_y -1}&&{space_y 2}[Z or ENTER] - Confirm&[X or SHIFT] - Cancel&[C or CTRL] - Menu (In-game)&[F4] - Fullscreen&[Hold ESC] - Quit&When HP is 0, you lose.";
+		_inst_instruction.text=_prefix+getString("menu.instruction");
 		_inst_begin=instance_create_depth(170,344,0,text_typer);
-		_inst_begin.text=_prefix+"Begin Game";
+		_inst_begin.text=_prefix+getString("menu.begin");
 		_inst_settings=instance_create_depth(170,384,0,text_typer);
-		_inst_settings.text=_prefix+"Settings";
+		_inst_settings.text=_prefix+getString("menu.settings");
 		with(text_typer){
 			event_user(15);
 		}
@@ -18,7 +19,7 @@ if(_menu==0){
 		s.LoadFromFile();
 		var z=Storage_GetInfoGeneral();
 		_inst_name=instance_create_depth(140,124,0,text_typer);
-		_inst_name.text=_prefix+z.Get(FLAG_INFO_NAME,Lang_GetString("ui.save.name.empty"));
+		_inst_name.text=_prefix+z.Get(FLAG_INFO_NAME,getString("ui.save.name.empty"));
 		_inst_lv=instance_create_depth(308,124,0,text_typer);
 		_inst_lv.text=_prefix+$"LV {z.Get(FLAG_INFO_LV,0)}";
 		_inst_time=instance_create_depth(452,124,0,text_typer);
@@ -33,13 +34,13 @@ if(_menu==0){
 		}
 		_inst_room.text=_prefix+Player_GetRoomName(roomIndex);
 		_inst_continue=instance_create_depth(170,210,0,text_typer);
-		_inst_continue.text=_prefix+Lang_GetString("menu.continue");
+		_inst_continue.text=_prefix+getString("menu.continue");
 		_inst_continue.override_color_text_enabled=true;
 		_inst_reset=instance_create_depth(390,210,0,text_typer);
-		_inst_reset.text=_prefix+Lang_GetString("menu.reset");
+		_inst_reset.text=_prefix+getString("menu.reset");
 		_inst_reset.override_color_text_enabled=true;
 		_inst_settings=instance_create_depth(264,250,0,text_typer);
-		_inst_settings.text=_prefix+Lang_GetString("menu.settings");
+		_inst_settings.text=_prefix+getString("menu.settings");
 		_inst_settings.override_color_text_enabled=true;
 		event_user(2);
 		
@@ -76,15 +77,15 @@ if(_menu==0){
 
 if(_menu==1){
 	_inst_naming_title=instance_create_depth(180,60,0,text_typer);
-	_inst_naming_title.text=_prefix+"Name the fallen human.";
+	_inst_naming_title.text=_prefix+getString("menu.naming.title");
 	_inst_naming_letters=instance_create_depth(120,152,0,text_typer);
-	_inst_naming_letters.text=_prefix+"{font 0}{effect 0}{space_x 24}{space_y -2}ABCDEFG&HIJKLMN&OPQRSTU&VWXYZ{space_y -7}&&{space_y -2}abcdefg&hijklmn&opqrstu&vwxyz";
+	_inst_naming_letters.text=_prefix+"{font 1}{effect 0}{space_x 24}{space_y -2}ABCDEFG&HIJKLMN&OPQRSTU&VWXYZ{space_y -7}&&{space_y -2}abcdefg&hijklmn&opqrstu&vwxyz";
 	_inst_naming_quit=instance_create_depth(120,400,0,text_typer);
-	_inst_naming_quit.text=_prefix+"Quit";
+	_inst_naming_quit.text=_prefix+getString("menu.naming.quit");
 	_inst_naming_backspace=instance_create_depth(240,400,0,text_typer);
-	_inst_naming_backspace.text=_prefix+"Backspace";
+	_inst_naming_backspace.text=_prefix+getString("menu.naming.backspace");
 	_inst_naming_done=instance_create_depth(440,400,0,text_typer);
-	_inst_naming_done.text=_prefix+"Done";
+	_inst_naming_done.text=_prefix+getString("menu.naming.done");
 	with(text_typer){
 		event_user(15);
 	}
@@ -111,9 +112,9 @@ if(_menu==2){
 	_inst_confirm_title=instance_create_depth(180,60,0,text_typer);
 	_inst_confirm_title.text=_prefix+_confirm_title;
 	_inst_confirm_no=instance_create_depth(146,400,0,text_typer);
-	_inst_confirm_no.text=_prefix+"No";
+	_inst_confirm_no.text=_prefix+getString("menu.naming.no");
 	_inst_confirm_yes=instance_create_depth(460,400,0,text_typer);
-	_inst_confirm_yes.text=_prefix+"Yes";
+	_inst_confirm_yes.text=_prefix+getString("menu.naming.yes");
 	_confirm_name_x=280;
 	_confirm_name_y=110;
 	_confirm_name_scale=2;

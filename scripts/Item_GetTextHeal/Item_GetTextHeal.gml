@@ -12,9 +12,9 @@ function Item_GetTextHeal() {
 	result+="{define `HP` "+string(HEAL)+"}";
 
 	if(Player_GetHp()>=Player_GetHpMax()){
-		result+=Lang_GetString("item.heal.all");
+		result+=getString("item.heal.all");
 	}else{
-		result+=Lang_GetString("item.heal.part");
+		result+=getString("item.heal.part");
 	}
 
 	return result;

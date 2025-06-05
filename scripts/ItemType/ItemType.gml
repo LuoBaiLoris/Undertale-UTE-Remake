@@ -16,7 +16,7 @@ function ItemType() constructor{
 			case 2: sub=3; break;
 			case 3: sub=4; break;
 		}
-		Dialog_Add("{define `ITEM` `"+GetName()+"`}"+Lang_GetString("item.drop."+string(sub)));
+		Dialog_Add("{define `ITEM` `"+GetName()+"`}"+getString("item.drop."+string(sub)));
 		Dialog_Start();
 
 		inventory.Remove(index);

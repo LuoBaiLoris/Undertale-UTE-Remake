@@ -56,7 +56,7 @@ if(_menu==0){
 				_menu=2;
 				var z=Storage_GetInfoGeneral();
 				_naming_name=z.Get(FLAG_INFO_NAME,"???");
-				_confirm_title=Lang_GetString("menu.confirm.title.reset");
+				_confirm_title=getString("menu.confirm.title.reset");
 				event_user(0);
 			}else if(_choice==2){
 				room_goto(room_settings);
